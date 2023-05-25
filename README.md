@@ -114,10 +114,10 @@ Query id: d1a64288-6f55-4abf-86d3-5eb13cb099e0
 
 ## Other Considerations
 Tried other CSV data and see errors below:
-![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/b7a9f76d-d43a-436a-a86f-55a46c32578f)
+![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/f4e49f68-5a57-41fa-8f89-77e4e6bcadae)
 
 This might be related to schema infer, and workaround is to use schema infer within Glue and all the columns will be "String" and use apply mapping to turn to right data type.
-![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/5bb1af49-20b5-441d-9454-2a4d455e2a82)
+![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/292a3cc5-29cc-416c-9e12-c0d06374ea3e)
 
 Decimal data type in CSV file cannot converted to Decimal correctly, but it will success converting to Double in Glue.
-![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/d7235201-6f41-4685-ad99-36fd77eeacbb)
+![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/231c777d-ac09-45d3-ab67-5b687b18a1c7)
