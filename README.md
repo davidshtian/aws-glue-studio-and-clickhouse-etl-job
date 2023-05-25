@@ -69,10 +69,10 @@ You could also use Secrets Manager for saving these information, if so remember 
 
 ## Glue ClickHouse Read Job
 Add ClickHouse data source, apply mapping and S3 data destination:
-<img width="1117" alt="image" src="https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/52906e46-7314-4157-a43c-7e2c193045f8">
+![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/52906e46-7314-4157-a43c-7e2c193045f8)
 
 Check S3 data:
-<img width="680" alt="image" src="https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/07a1931b-ff22-44ea-9497-e54759a5940f">
+![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/07a1931b-ff22-44ea-9497-e54759a5940f)
 
 > Notes: Please note the schema and schema mapping.
 
@@ -95,7 +95,7 @@ Query id: d10e1f66-c417-4419-bb98-d94b4c3cae50
 ```
 
 Add S3 data source, apply mapping and ClickHouse data destination:
-<img width="1114" alt="image" src="https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/1211e256-2083-463b-b9c4-9cfac93e9106">
+![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/1211e256-2083-463b-b9c4-9cfac93e9106)
 
 Check ClickHouse data:
 ```
@@ -114,10 +114,10 @@ Query id: d1a64288-6f55-4abf-86d3-5eb13cb099e0
 
 ## Other Considerations
 Tried other CSV data and see errors below:
-<img width="697" alt="image" src="https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/b7a9f76d-d43a-436a-a86f-55a46c32578f">
+![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/b7a9f76d-d43a-436a-a86f-55a46c32578f)
 
 This might be related to schema infer, and workaround is to use schema infer within Glue and all the columns will be "String" and use apply mapping to turn to right data type.
 ![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/5bb1af49-20b5-441d-9454-2a4d455e2a82)
 
 Decimal data type in CSV file cannot converted to Decimal correctly, but it will success converting to Double in Glue.
-<img width="682" alt="image" src="https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/d7235201-6f41-4685-ad99-36fd77eeacbb">
+![image](https://github.com/davidshtian/aws-glue-studio-and-clickhous-etl-job/assets/14228056/d7235201-6f41-4685-ad99-36fd77eeacbb)
